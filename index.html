@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Vendor App</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a202c; /* Dark slate background */
+            color: #e2e8f0; /* Light gray text */
+        }
+    </style>
+</head>
+<body class="bg-gray-900 min-h-screen flex items-center justify-center">
+
+    <div class="container text-center p-8 bg-gray-800 rounded-2xl shadow-2xl max-w-lg mx-auto">
+        <h1 class="text-5xl font-extrabold text-yellow-400 mb-8">Welcome to The Food Spot App!</h1>
+        
+        <p class="text-gray-300 text-xl mb-10">Please choose your role to continue:</p>
+
+        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 justify-center">
+            <!-- These links will be set dynamically by JavaScript -->
+            <a href="#" id="customer-kiosk-link" class="px-8 py-4 bg-indigo-600 text-white font-bold rounded-xl shadow-lg hover:bg-indigo-700 transition-transform duration-300 transform hover:scale-105 text-lg">
+                <i class="fas fa-utensils mr-2"></i> Customer Kiosk
+            </a>
+            
+            <a href="#" id="admin-panel-link" class="px-8 py-4 bg-purple-600 text-white font-bold rounded-xl shadow-lg hover:bg-purple-700 transition-transform duration-300 transform hover:scale-105 text-lg">
+                <i class="fas fa-user-shield mr-2"></i> Admin Dashboard
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // --- Configuration Variables ---
+        // You can easily change these URLs here without editing the HTML anchor tags.
+        const kioskUrl = "https://web3from2guy-dev.github.io/Web3from2-Kiosk-Model-1-WEB2-VERSION-/";
+        const adminUrl = "https://web3from2guy-dev.github.io/Web3from2-Kiosk-Model-1-WEB2-VERSION-Admin-End/";
+
+        // --- Assign the URLs to the links ---
+        document.getElementById("customer-kiosk-link").href = kioskUrl;
+        document.getElementById("admin-panel-link").href = adminUrl;
+    </script>
+</body>
+</html>
