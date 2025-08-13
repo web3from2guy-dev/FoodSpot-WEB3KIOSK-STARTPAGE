@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Food Spot - Start</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <style>
         body { font-family: 'Inter', sans-serif; }
     </style>
@@ -25,5 +26,9 @@
         <p class="text-gray-400 mt-6 text-sm">Each deployed copy keeps its own configuration.</p>
     </div>
 
+    <script>
+        // Disable the right-click context menu
+        document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
 </body>
 </html>
